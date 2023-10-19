@@ -19,22 +19,13 @@ html {
 }
 
 body {
+  margin: 0;
   height: 100%;
   font-family: "PT Sans", "Vernada", sans-serif;
   font-size: 18px;
   line-height: 21px;
   background-color: #fff;
   color: #000;
-}
-
-.page-container {
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-.main-container {
-  flex-grow: 1;
 }
 
 .button {
@@ -66,6 +57,25 @@ body {
   background-color: #7DB54F;
 }
 
+/* Page */
+
+.page-container {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-container {
+  flex-grow: 1;
+}
+
+.navigation {
+  display: flex;
+  width: 1200px;
+  padding: 0 70px;
+  margin: 0 auto;
+}
+
 .navigation-link {
   font-size: 20px;
   font-weight: 700;
@@ -75,14 +85,28 @@ body {
   text-align: center;
 }
 
+.navigation-logo {
+  margin-right: 30px;
+}
+
+.navigation-list {
+  width: 460px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.navigation-user {
+  width: 300px;
+  margin-left: auto;
+}
+
 .favorite-hotels {
   font-size: 10px;
   line-height: 10px;
   background-color:#7DB54F;
   color:#fff;
 }
-
-/* hero */
 
 .hero {
   background-image: url("../image/divider.svg"), url("../image/index-background.jpg");
@@ -93,8 +117,6 @@ body {
   background-position: bottom, center;
   text-align: center;
 }
-
-/* Page */
 
 .advantages-intro,
 .services-intro,
@@ -113,7 +135,6 @@ body {
   line-height: 26px;
   text-align: center;
 }
-
 
 .advantages-title {
   font-size: 24px;
