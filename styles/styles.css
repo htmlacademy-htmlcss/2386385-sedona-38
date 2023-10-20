@@ -59,7 +59,12 @@ body {
 
 /* Page */
 
-.page-container {
+.visually-hidden {
+  margin: 0;
+  padding: 0;
+}
+
+.sticky-footer {
   min-height: 100%;
   display: flex;
   flex-direction: column;
@@ -67,6 +72,8 @@ body {
 
 .main-container {
   flex-grow: 1;
+  width: 1200px;
+  margin: 0 auto;
 }
 
 .navigation {
@@ -126,6 +133,15 @@ body {
   line-height: 36px;
   text-transform: uppercase;
   text-align: center;
+}
+
+.advantages-intro {
+  margin: 69px 0 25px;
+  padding: 0 290px;
+}
+
+.advantages-intro-description {
+  margin: 25px auto 90px;
 }
 
 .advantages-intro-description,
