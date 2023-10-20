@@ -296,6 +296,10 @@ body {
   margin: 0 auto 20px;
 }
 
+.subscribe-description {
+  margin: 0 auto 54px;
+}
+
 .field {
   width: 452px;
   height: 52px;
@@ -312,10 +316,6 @@ body {
 
 /* Footer */
 
-.subscribe-description {
-  margin: 0 auto 54px;
-}
-
 .footer-contacts-phone {
   font-size: 40px;
   line-height: 40px;
@@ -324,6 +324,25 @@ body {
   color:#000;
 }
 
+.footer-wrapper {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  justify-content: space-around;
+}
+
+.footer-social {
+  width: 150px;
+}
+
+.footer-contacts {
+  width: 720px;
+  text-align: center;
+}
+
+.author-link {
+ width: 115px;
+}
 /* Catalog */
 
 .background-catalog-filter {
