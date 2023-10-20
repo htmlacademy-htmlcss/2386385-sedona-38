@@ -270,8 +270,51 @@ body {
   text-align: center;
 }
 
+.search-wrapper {
+  padding: 96px 304px;
+}
+
+.search-intro {
+  margin: 0 auto 20px;
+}
+
+.search-intro-description {
+  margin: 0 auto 54px;
+}
+
+.button-search {
+  width: 275px;
+  padding: 8px 50px;
+  margin: 0 auto;
+}
+
+.subscribe-wrapper {
+  padding: 96px 258px 104px;
+}
+
+.subscribe-title {
+  margin: 0 auto 20px;
+}
+
+.field {
+  width: 452px;
+  height: 52px;
+  padding: 0;
+  border: none;
+}
+
+.button-newsletter {
+  width: 232px;
+  height: 52px;
+  padding: 0;
+  border: none;
+}
+
 /* Footer */
 
+.subscribe-description {
+  margin: 0 auto 54px;
+}
 
 .footer-contacts-phone {
   font-size: 40px;
