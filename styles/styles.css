@@ -117,6 +117,7 @@ body {
   background-repeat: no-repeat;
   background-position: bottom, center;
   text-align: center;
+  margin: 0 0 69px;
 }
 
 .advantages-intro,
@@ -130,7 +131,7 @@ body {
 }
 
 .advantages-intro {
-  margin: 69px 0 25px;
+  margin: 0 0 25px;
   padding: 0 290px;
 }
 
@@ -143,7 +144,8 @@ body {
 }
 
 .advantages-intro-description {
-  margin: 25px auto 90px;
+  margin: 0 auto 90px;
+  padding: 0 270px;
 }
 
 .advantages-item-title {
@@ -154,7 +156,7 @@ body {
 }
 
 .advantages-list {
-  margin: 0;
+  margin: 0 0 64px;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
@@ -206,12 +208,13 @@ body {
 }
 
 .services-intro {
-  margin: 64px 0 20px;
+  margin: 0 0 20px;
   padding: 0 348px;
 }
 
 .services-intro-description {
-  margin: 20px auto 64px;
+  margin: 0 auto 64px;
+  padding: 0 350px;
 }
 
 .services-title {
@@ -226,11 +229,14 @@ body {
   padding: 0;
   display: flex;
   list-style-type: none;
+  flex-wrap: wrap;
 }
 
 .services-item {
   width: 400px;
   padding: 80px 85px;
+  box-sizing: border-box;
+
 }
 
 .services-title {
@@ -243,31 +249,10 @@ body {
   text-align: center;
 }
 
-.subscribe-index {
-  background-image: url("../image/subscribe-background.jpg");
-  background-color: #82B3D3;
-  width: 1200px;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.subscribe-title-index {
-  text-align: center;
-  color:#fff;
-  font-size: 30px;
-  line-height: 36px;
-  text-transform: uppercase;
-}
-
-.subscribe-description-index {
-  font-size: 22px;
-  line-height: 26px;
-  color:#fff;
-  text-align: center;
-}
-
 .search-wrapper {
   padding: 96px 304px;
+  display: flex;
+  flex-direction: column;
 }
 
 .search-intro {
@@ -275,6 +260,7 @@ body {
 }
 
 .search-intro-description {
+  width: 592px;
   margin: 0 auto 54px;
 }
 
@@ -284,16 +270,40 @@ body {
   margin: 0 auto;
 }
 
-.subscribe-wrapper {
-  padding: 96px 258px 104px;
+.subscribe-index {
+  background-image: url("../image/subscribe-background.jpg");
+  background-color: #82B3D3;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .subscribe-title {
-  margin: 0 auto 20px;
+  text-align: center;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  margin: 0 0 20px;
+}
+.subscribe-title-index {
+  color:#fff;
 }
 
 .subscribe-description {
-  margin: 0 auto 54px;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  margin: 0 0 54px;
+}
+
+.subscribe-description-index {
+  color:#fff;
+}
+
+.subscribe {
+  display: flex;
+  padding: 96px 258px 104px;
+  flex-direction: column;
+  align-items: center;
 }
 
 .field {
@@ -320,7 +330,7 @@ body {
   color:#000;
 }
 
-.footer-wrapper {
+.page-footer {
   display: flex;
   width: 1060px;
   margin: 0 auto;
@@ -340,6 +350,7 @@ body {
 .author-link {
  width: 115px;
 }
+
 /* Catalog */
 
 .background-catalog-filter {
@@ -347,7 +358,6 @@ body {
   background-color: #82B3D3;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 1200px;
   color:#fff;
 }
 
@@ -355,7 +365,6 @@ body {
   font-size: 60px;
   line-height: 78px;
 }
-
 
 .breadcrumbs-link {
   font-size: 16px;
@@ -371,13 +380,31 @@ body {
   line-height: 23px;
 }
 
+.catalog-hostels-found {
+  padding: 50px 70px 60px;
+}
+
+.hotels-found-wrapper {
+  display: flex;
+}
+
 .hotels-found {
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
+  margin: 0;
+  margin-right: auto;
+  align-self: center;
 }
 
+.view-list {
+  display: flex;
+  margin: 0;
+  margin-left: 70px;
+  padding: 0;
+  list-style-type: none;
+}
 .view-item a {
   border-radius: 4px;
   border: 2px solid #E5E5E5;
@@ -389,9 +416,7 @@ body {
   border: 2px solid #000;
 }
 
-.catalog-hostels-found {
-  padding: 50px 70px 60px;
-}
+/* Hotel-card */
 
 .hotel-list {
   display: flex;
@@ -424,7 +449,6 @@ body {
   background-color:#F2F2F2;
 }
 
-
 /* Pagination */
 
 .pagination-link {
@@ -447,17 +471,6 @@ body {
   color:#000;
 }
 
-.subscribe-title-catalog {
-  color:#000;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.subscribe-description-catalog {
-  color:#000;
-  text-align: center;
-}
-
 .pagination {
   display: flex;
   margin: 0;
@@ -473,4 +486,18 @@ body {
 
 .pagination-item {
   margin-right: 8px;
+}
+
+/* Subscribe catalog*/
+
+.subscribe-title-catalog {
+  color:#000;
+}
+
+.subscribe-description-catalog {
+  color:#000;
+}
+
+.field-catalog {
+  background-color: #F2F2F2;
 }
