@@ -134,13 +134,31 @@ body {
   padding: 22px 12px;
   min-width: 20px;
   min-height: 20px;
+  display: block;
+  position: relative;
+}
+
+.navigation-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
 }
 
 .favorite-hotels {
   font-size: 10px;
   line-height: 10px;
+  font-weight: normal;
   background-color:#7DB54F;
+  padding: 5px;
+  border-radius: 50%;
   color:#fff;
+  position: absolute;
+  top: 11px;
+  left: 20px;
+  text-align: center;
 }
 
 .navigation-user .navigation-item:nth-child(3) {
@@ -589,7 +607,7 @@ body {
 
 .hotels-found-wrapper {
   display: flex;
-  margin-bottom: 80px;
+  margin-bottom: 40px;
 }
 
 .hotels-found {
