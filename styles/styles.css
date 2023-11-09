@@ -449,7 +449,7 @@ body {
 }
 
 .social-link {
-  padding: 12px 13px;
+  padding: 13px 13px;
   display: block;
   min-width: 24px;
   min-height: 17px;
@@ -513,13 +513,37 @@ body {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  align-items: center;
 }
 
 .breadcrumbs-link {
   font-size: 16px;
-  margin-right: 28px;
   min-width: 13px;
   min-height: 15px;
+  display: block;
+}
+
+.breadcrumbs-item:first-child .breadcrumbs-link {
+  padding: 4px 1px;
+  position: relative;
+}
+
+.breadcrumbs-icon-home {
+  position: absolute;
+  top: 2px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+.breadcrumbs-item:not(:last-child) {
+  padding-right: 17px;
+  background-image: url("../image/catalog-images/breadcrumbs-arrow.svg");
+  background-repeat: no-repeat;
+  background-size: 8px 22px;
+  background-position: right top 1px;
+  margin-right: 10px;
 }
 
 .catalog-filter {
