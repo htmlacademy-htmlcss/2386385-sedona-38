@@ -706,6 +706,7 @@ body {
   font-weight: 700;
   line-height: 24px;
   margin-bottom: 32px;
+  padding: 0;
 }
 
 .catalog-filter-group {
@@ -715,32 +716,6 @@ body {
   margin: 0;
   margin-right: 70px;
   padding: 0;
-}
-
-.catalog-filter-price {
-  margin-left: auto;
-  width: 288px;
-}
-
-.price-control-wrapper {
-  display: flex;
-  margin-bottom: 36px;
-}
-
-.price-control-input {
-  width: 143px;
-  padding: 12px 20px;
-  box-sizing: border-box;
-  border: none;
-}
-
-.price-control-from {
-  border-radius: 4px 0px 0px 4px;
-  margin-right: 2px;
-}
-
-.price-control-to {
-  border-radius: 0px 4px 4px 0px;;
 }
 
 .catalog-filter-list {
@@ -754,6 +729,98 @@ body {
 
 .catalog-filter-item:not(:last-child) {
   margin-bottom: 16px;
+}
+
+.catalog-filter-price {
+  margin-left: auto;
+  width: 288px;
+}
+
+.price-control-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price-control-input {
+  width: 143px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: none;
+  background-color: #F2F2F2;
+}
+
+.price-control-input:hover {
+  background-color: #E6E6E6;
+}
+
+.price-control-input:focus {
+  background-color: #E6E6E6;
+  outline: 3px solid #83B3D3;
+}
+
+.price-control-input::placeholder {
+  color: rgba(0, 0, 0, 0.3);
+  text-align: right;
+}
+
+.price-control-input::-webkit-outer-spin-button,
+.price-control-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.price-control-from {
+  border-radius: 4px 0px 0px 4px;
+  margin-right: 2px;
+}
+
+.price-control-to {
+  border-radius: 0px 4px 4px 0px;;
+}
+
+.range-scale {
+  position: relative;
+  height: 4px;
+  margin-top: 36px;
+  background-color: rgba(225, 225, 225, 0.3);;
+}
+
+.range-bar {
+  position: absolute;
+  height: 4px;
+  background-color: #FFF;
+}
+
+.range-toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border-style: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  background-color: #ffffff;
+}
+
+.range-toggle:focus {
+  outline: 3px solid #83B3D3;
+}
+
+.range-toggle:active {
+  outline: 2px solid #83B3D3;
+}
+
+.toggle-min {
+  top: -8px;
+  left: 0px;
+}
+
+.toggle-max {
+  top: -8px;
+  right: -200px;
 }
 
 .buttons-filter-wrapper {
