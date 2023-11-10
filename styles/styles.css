@@ -63,6 +63,10 @@ body {
   background-color: #756157;
 }
 
+.button:disabled {
+  background-color: #E5E5E5;
+}
+
 .button-search {
   font-size: 20px;
   line-height: 36px;
@@ -602,7 +606,6 @@ body {
   position: relative;
   min-width: 115px;
   min-height: 34px;
-
 }
 
 .htmlacademy-icon {
@@ -622,7 +625,6 @@ body {
   color: #756157;
   opacity: 0.3;
 }
-
 
 /* Catalog */
 
@@ -682,6 +684,16 @@ body {
   background-size: 8px 22px;
   background-position: right top 1px;
   margin-right: 10px;
+}
+
+.breadcrumbs-link:hover {
+  color: #FFFFFF;
+  opacity: 0.6;
+}
+
+.breadcrumbs-link:active {
+  color: #FFFFFF;
+  opacity: 0.3;
 }
 
 .catalog-filter {
@@ -797,8 +809,9 @@ body {
   outline: 2px solid #68A2CA;
 }
 
-.select-control:focus {
-  outline: 2px solid #68A2CA;
+.select-control:disabled {
+  outline: 2px solid rgba(0, 0, 0, 0.30);
+  color: rgba(0, 0, 0, 0.30);
 }
 
 .view-list {
