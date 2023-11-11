@@ -731,10 +731,13 @@ body {
   margin-bottom: 16px;
 }
 
+/* Checkbox */
+
 .control {
   position: relative;
   display: block;
   padding-left: 36px;
+  cursor: pointer;
 }
 
 .control-mark {
@@ -745,6 +748,7 @@ body {
   height: 20px;
   background-color: #FFF;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .control:hover {
@@ -777,6 +781,23 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 20px 20px;
+}
+
+/* Radio */
+
+.control-input[type="radio"] + .control-mark {
+  border-radius: 50%;
+}
+
+.control-input[type="radio"]:checked + .control-mark::before {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 10px;
+  height: 10px;
+  background-color: rgba(63, 94, 114, 1);
+  border-radius: 50%;
+  content: "";
 }
 
 .catalog-filter-price {
