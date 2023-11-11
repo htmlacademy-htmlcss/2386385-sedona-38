@@ -731,6 +731,54 @@ body {
   margin-bottom: 16px;
 }
 
+.control {
+  position: relative;
+  display: block;
+  padding-left: 36px;
+}
+
+.control-mark {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #FFF;
+  border-radius: 4px;
+}
+
+.control:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.control:hover .control-mark {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.control:focus {
+  color: rgba(255, 255, 255, 1);
+}
+
+.control:focus .control-mark {
+  background-color: rgba(255, 255, 255, 1);
+  border: 3px solid #83B3D3;
+}
+
+.control:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.control:active .control-mark {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.control-input[type="checkbox"]:checked + .control-mark {
+  background-image: url("../image/catalog-images/tick.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px 20px;
+}
+
 .catalog-filter-price {
   margin-left: auto;
   width: 288px;
