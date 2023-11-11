@@ -935,6 +935,11 @@ body {
   border-color:#E5E5E5;
   border-radius: 4px;
   padding: 14px 20px;
+  padding-right: 40px;
+  background-image: url("../image/catalog-images/vector.svg");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  appearance: none;
 }
 
 .select-control:hover {
