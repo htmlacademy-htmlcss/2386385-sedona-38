@@ -58,12 +58,12 @@
         </div>
         <section class="advantages">
           <h2 class="visually-hidden">Преимущества</h2>
-          <p class="advantages-intro">Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
+          <p class="advantages-intro">Седона &mdash; небольшой городок в Аризоне, заслуживающий большего!</p>
           <p class="advantages-intro-description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
           <ul class="advantages-list">
             <li class="advantages-item advantages-item-deepblue">
               <div class="advantage-item-container">
-                <h3 class="advantages-item-title">Настоящий городок</h3>
+                <h3 class="advantages-item-title">Настоящий&nbsp; городок</h3>
                 <p class="advantages-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
               </div>
               <img class="advantages-image" src="image/advantage-photo-1.jpg" alt="Здание на фоне гор" width="800" height="385">
@@ -82,7 +82,7 @@
             </li>
             <li class="advantages-item advantages-item-deepblue">
               <div class="advantage-item-container">
-                <h3 class="advantages-item-title">Там есть мост дьявола</h3>
+                <h3 class="advantages-item-title">&nbsp;Там есть&nbsp; мост дьявола</h3>
                 <p class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
               </div>
               <img class="advantages-image" src="image/advantage-photo-2.jpg" alt="Скалы с обрывом" width="800" height="385">
@@ -96,7 +96,7 @@
           <ul class="services-list">
             <li class="services-item services-item-middleblue">
               <h3 class="services-title">Жильё</h3>
-              <p class="services-description">Рекомендуем пожить в настоящем мотеле, <br>всё как в кино!</p>
+              <p class="services-description">Рекомендуем пожить <br> в настоящем мотеле, <br> всё как в кино!</p>
             </li>
             <li class="services-item">
               <h3 class="services-title">Еда</h3>
@@ -180,6 +180,78 @@
           </a>
         </section>
       </footer>
+    </div>
+    <div class="modal-container modal-container-close">
+      <div class="modal-window">
+        <button class="modal-close-button">
+          <svg class="close-button-icon" width="15" height="15" viewBox="0 0 15 15" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14.4905 1.78288L13.1982 0.49057L7.49048 6.19826L1.78279 0.49057L0.490479 1.78288L6.19817 7.49057L0.490479 13.1983L1.78279 14.4906L7.49048 8.78288L13.1982 14.4906L14.4905 13.1983L8.78279 7.49057L14.4905 1.78288Z" fill="currentColor"/>
+            </svg>
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <form class="check-in-form" action="https://echo.htmlacademy.ru/" method="post">
+           <div class="check-in-form-wrapper">
+              <div class="modal-field-group check-in-group">
+                <div class="input-label-wrapper">
+                  <label class="check-group-title check-in-title" for="check-in-data">Дата Заезда:</label>
+                  <input class="check-input check-in-input" type="text" id="check-in-data" name="check-in-data" placeholder="Укажите дату" value="27 апреля 2020" required>
+                </div>
+                <p class="warning-message">Мы не можем отправить вас в прошлое.</p>
+              </div>
+              <div class="modal-field-group check-out-group">
+                <div class="input-label-wrapper">
+                  <label class="check-group-title check-out-title" for="check-out-data">Дата Выезда:</label>
+                  <input class="check-input check-out-input" type="text" id="check-out-data" name="check-out-data" placeholder="Укажите дату" value="1 сентября 2023" required>
+                </div>
+                <p class="warning-message">На эти даты есть свободные номера. Пока есть.</p>
+              </div>
+              <div class="input-label-wrapper">
+                <div class="modal-field-group adult-travelers">
+                  <label class="check-group-title adult-travelers-title" for="adult-travelers-number">Взрослые:</label>
+                  <button class="remove-travelers remove-adult-travelers" type="button">
+                    <svg class="remove-icon" width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 0L0 2L14 2V0L0 0Z" fill="currentColor"/>
+                      </svg>
+                  </button>
+                  <span class="visually-hidden">Убрать количество взрослых</span>
+                  <input class="check-input travelers-input adult-travelers-input" type="number" id="adult-travelers-number" name="adult-travelers-number" value="2" step="1" max="99" required>
+                  <button class="add-travelers add-adult-travelers" type="button">
+                    <svg class="add-icon" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="currentColor"/>
+                      </svg>
+                  </button>
+                  <span class="visually-hidden">Добавить количество взрослых</span>
+                </div>
+                <div class="modal-field-group children-travelers">
+                  <span class="tooltip-wrapper">
+                    <label class="check-group-title children-travelers-title" for="children-travelers-number">Дети:</label>
+                    <span class="tooltip">
+                      <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date"></button>
+                      <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                    </span>
+                  </span>
+                  <button class="remove-travelers remove-children-travelers" type="button">
+                    <svg class="remove-icon" width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 0L0 2L14 2V0L0 0Z" fill="currentColor"/>
+                      </svg>
+                  </button>
+                  <span class="visually-hidden">Убрать количество детей</span>
+                  <input class="check-input travelers-input children-travelers-input" type="number" id="children-travelers-number" name="children-travelers-number" value="2" step="1" max="99" required>
+                  <button class="add-travelers add-children-travelers" type="submit">
+                    <svg class="add-icon" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="currentColor"/>
+                      </svg>
+                  </button>
+                  <span class="visually-hidden">Добавить количество детей</span>
+                </div>
+              </div>
+              <button class="button modal-button-find-hotels" type="submit">Найти</button>
+           </div>
+          </form>
+        </section>
+      </div>
     </div>
   </body>
 </html>
