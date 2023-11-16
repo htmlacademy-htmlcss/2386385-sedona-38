@@ -264,9 +264,9 @@ body {
 
 .hero {
   background-image: url("../image/divider.svg"), url("../image/index-background.jpg");
-  background-color:#7DB54F;
+  background-color: rgba(131, 179, 211, 0.5);
   width: 1200px;
-  height: 485px;
+  min-height: 485px;
   background-repeat: no-repeat;
   background-position: bottom, center;
   text-align: center;
@@ -1092,7 +1092,7 @@ input[type=number]::-webkit-inner-spin-button {
 
 .control:focus-within .control-mark {
   background-color: rgba(255, 255, 255, 1);
-  border: 3px solid #83B3D3;
+  outline: 3px solid #83B3D3;
 }
 
 .control:active {
@@ -1249,6 +1249,7 @@ input[type=number]::-webkit-inner-spin-button {
 .hotels-found-wrapper {
   display: flex;
   margin-bottom: 40px;
+  align-items: center;
 }
 
 .hotels-found {
@@ -1256,6 +1257,7 @@ input[type=number]::-webkit-inner-spin-button {
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
+  max-width: 350px;
   margin: 0;
   margin-right: auto;
   align-self: center;
@@ -1263,6 +1265,7 @@ input[type=number]::-webkit-inner-spin-button {
 
 .select-control {
   width: 292px;
+  max-height: 50px;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
   padding: 12px 18px;
