@@ -49,7 +49,7 @@ body {
   text-transform: uppercase;
   border-radius: 4px;
   cursor: pointer;
-  font-family: PT Sans;
+  font-family: "PT Sans", "Vernada", sans-serif;
 }
 
 .button:hover {
@@ -520,7 +520,7 @@ body {
 }
 
 .button-newsletter {
-  font-family: PT Sans;
+  font-family: "PT Sans", "Vernada", sans-serif;
   padding: 8px 50px;
   border: none;
   border-radius: 0px 4px 4px 0px;
@@ -530,7 +530,7 @@ body {
 }
 
 .field::placeholder {
-  font-family: PT Sans;
+  font-family: "PT Sans", "Vernada", sans-serif;
   font-size: 18px;
   line-height: 24px;
   color: rgba(0, 0, 0, 0.6);
@@ -934,7 +934,7 @@ input[type=number]::-webkit-inner-spin-button {
   box-sizing: border-box;
   font-size: 20px;
   line-height: 24px;
-  font-family: PT Sans;
+  font-family: "PT Sans", "Vernada", sans-serif;
 }
 
 .modal-button-find-hotels:hover,
@@ -1276,7 +1276,7 @@ input[type=number]::-webkit-inner-spin-button {
   appearance: none;
   font-size: 18px;
   line-height: 21px;
-  font-family: PT Sans;
+  font-family: "PT Sans", "Vernada", sans-serif;
   box-sizing: border-box;
 }
 
@@ -1431,7 +1431,7 @@ button.hotel-card-button {
   display: block;
   flex-shrink: 0;
   border: none;
-  font-family: PT Sans;
+  font-family: "PT Sans", "Vernada", sans-serif;
 }
 
 button.hotel-card-button:hover {
